@@ -7,7 +7,7 @@ import Image from 'next/image';
 import { ParallaxSlider } from '@/components';
 
 import { slideUp } from './variants';
-import Img from '../../../public/Kushagara-removebg-preview.png';
+import Img from '../../../public/landing2.png';
 
 export function Header() {
   return (
@@ -25,7 +25,7 @@ export function Header() {
           layout='fill'
           // objectFit='contain' // Cover entire area while maintaining aspect ratio
           priority={true} // Ensure image loads faster
-          className='object-cover lg:object-contain'
+          className=' object-cover sm:object-contain'
         />
       </div>
 

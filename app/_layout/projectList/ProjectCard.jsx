@@ -29,11 +29,11 @@ const ProjectCard = ({ imageSrc, title, description, year }) => {
             </p>
 
             {/* Members Section (Highlighted) */}
-            <div className='mt-2'>
+            {/* <div className='mt-2'>
               <p className='text-center text-base font-semibold text-[#4070f4]'>
                 {year} Members
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
@@ -53,9 +53,9 @@ const ProjectCard = ({ imageSrc, title, description, year }) => {
           </div>
 
           {/* Middle: Number of Members */}
-          <div className='w-1/5 text-center'>
+          {/* <div className='w-1/5 text-center'>
             <p className='text-xl font-semibold'>{year} Members</p>
-          </div>
+          </div> */}
 
           {/* Right: Name and Description */}
           <div className='w-2/4'>

@@ -2,6 +2,7 @@
 
 import { Copyright } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 import Logo from '../../../public/PLogo.png';
 
@@ -22,7 +23,9 @@ export function NavbarBrand() {
         <h5 className='absolute left-28 ps-1 transition-transform duration-500 ease-in-expo group-hover:-translate-x-14'>
           Snellenberg
         </h5> */}
-        <Image src={Logo} width={50} height={50} alt='logo' />
+        <Link href='/'>
+          <Image src={Logo} width={50} height={50} alt='logo' />
+        </Link>
       </div>
     </div>
   );

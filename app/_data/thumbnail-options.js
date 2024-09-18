@@ -3,7 +3,7 @@ import { Description } from '@/layout';
 export const thumbnailOptions = [
   {
     href: '/fabric',
-    title: 'Management & Moderation',
+    title: 'Management & Moderator',
     image: 'Dennis-Portfolio/images/hlz36eeb3ddfvqt9tex9',
     description:
       'Expertly nurture and grow vibrant Discord ​communities by ensuring a safe and fun ​environment for all.',
