@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import { InProgress } from '@/components';
+import { InProgress, MagneticButton } from '@/components';
 import { Navbar, Transition } from '@/layout';
 
 /** @type {import('next').Metadata} */
@@ -19,7 +19,7 @@ export default function Contact() {
         <div className='container mx-auto flex min-h-screen flex-col items-center justify-center pt-80'>
           <div className='flex w-full items-end'>
             <div className='flex w-full flex-col md:w-2/3'>
-              <h1 className=' flex  gap-3 text-5xl text-white md:flex-col md:text-9xl '>
+              <h1 className=' flex  gap-3 text-4xl text-white md:flex-col md:text-9xl '>
                 {/* Replace with Next.js Image component */}
                 <div className='relative size-14 rounded-full md:hidden'>
                   <Image
@@ -32,7 +32,7 @@ export default function Contact() {
                 Let&apos;s start a
                 <span className='hidden md:block'> project together</span>
               </h1>
-              <h1 className='flex text-5xl text-white md:hidden md:text-9xl'>
+              <h1 className='flex text-4xl text-white md:hidden md:text-9xl'>
                 project together
               </h1>
             </div>
@@ -53,7 +53,7 @@ export default function Contact() {
           <form className='flex w-full flex-col-reverse md:flex-row' action=''>
             <div className='w-full py-20 md:w-2/3'>
               <div className='flex items-start space-x-4 border-t border-gray-600 py-10'>
-                <p className='text-xl text-gray-500 md:mr-10 md:text-2xl'>03</p>
+                <p className='text-xl text-gray-500 md:mr-10 md:text-2xl'>01</p>
                 <div className='w-full'>
                   <label
                     className='mb-2 block text-2xl font-semibold text-white md:text-4xl'
@@ -64,7 +64,7 @@ export default function Contact() {
                   <input
                     type='text'
                     id='organization'
-                    placeholder='John & Doe ®'
+                    placeholder='ProtonicGod'
                     className='w-full rounded-md bg-[#1C1E21] px-4  py-3  text-2xl text-white focus:outline-none focus:ring-blue-500 md:text-4xl'
                   />
                 </div>
@@ -74,18 +74,72 @@ export default function Contact() {
               {/* Make sure the IDs of inputs are unique or modify them as needed */}
 
               <div className='flex items-start space-x-4 border-t border-gray-600 py-10'>
+                <p className='text-xl text-gray-500 md:mr-10 md:text-2xl'>02</p>
+                <div className='w-full'>
+                  <label
+                    className='mb-2 block text-2xl font-semibold text-white md:text-4xl'
+                    htmlFor='organization'
+                  >
+                    What&apos;s your email?
+                  </label>
+                  <input
+                    type='text'
+                    id='organization'
+                    placeholder='hi@protonicgod.me'
+                    className='w-full rounded-md bg-[#1C1E21] px-4  py-3  text-2xl text-white focus:outline-none focus:ring-blue-500 md:text-4xl'
+                  />
+                </div>
+              </div>
+
+              <div className='flex items-start space-x-4 border-t border-gray-600 py-10'>
                 <p className='text-xl text-gray-500 md:mr-10 md:text-2xl'>03</p>
                 <div className='w-full'>
                   <label
                     className='mb-2 block text-2xl font-semibold text-white md:text-4xl'
                     htmlFor='organization'
                   >
-                    What&apos;s the name?
+                    What&apos;s the name of your organization??
                   </label>
                   <input
                     type='text'
                     id='organization'
-                    placeholder='John & Doe ®'
+                    placeholder='ProtonicGod'
+                    className='w-full rounded-md bg-[#1C1E21] px-4  py-3  text-2xl text-white focus:outline-none focus:ring-blue-500 md:text-4xl'
+                  />
+                </div>
+              </div>
+
+              <div className='flex items-start space-x-4 border-t border-gray-600 py-10'>
+                <p className='text-xl text-gray-500 md:mr-10 md:text-2xl'>04</p>
+                <div className='w-full'>
+                  <label
+                    className='mb-2 block text-2xl font-semibold text-white md:text-4xl'
+                    htmlFor='organization'
+                  >
+                    What services are you looking for?
+                  </label>
+                  <input
+                    type='text'
+                    id='organization'
+                    placeholder='Community Manager'
+                    className='w-full rounded-md bg-[#1C1E21] px-4  py-3  text-2xl text-white focus:outline-none focus:ring-blue-500 md:text-4xl'
+                  />
+                </div>
+              </div>
+
+              <div className='flex items-start space-x-4 border-t border-gray-600 py-10'>
+                <p className='text-xl text-gray-500 md:mr-10 md:text-2xl'>05</p>
+                <div className='w-full'>
+                  <label
+                    className='mb-2 block text-2xl font-semibold text-white md:text-4xl'
+                    htmlFor='organization'
+                  >
+                    Your message
+                  </label>
+                  <input
+                    type='text'
+                    id='organization'
+                    placeholder='Hello Kushagara, can you help me with ... *'
                     className='w-full rounded-md bg-[#1C1E21] px-4  py-3  text-2xl text-white focus:outline-none focus:ring-blue-500 md:text-4xl'
                   />
                 </div>

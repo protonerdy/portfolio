@@ -48,13 +48,13 @@ const Testimonial = () => {
   };
 
   // Automatically move the carousel every 3 seconds
-  useEffect(() => {
-    const interval = setInterval(() => {
-      moveCarousel(1); // Move to the next card
-    }, 3000); // 3000ms = 3 seconds
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     moveCarousel(1); // Move to the next card
+  //   }, 3000); // 3000ms = 3 seconds
 
-    return () => clearInterval(interval); // Clean up the interval on component unmount
-  }, [currentIndex, visibleCards]);
+  //   return () => clearInterval(interval); // Clean up the interval on component unmount
+  // }, [currentIndex, visibleCards]);
 
   // Adjust the number of visible cards based on screen width
   useEffect(() => {
@@ -85,16 +85,18 @@ const Testimonial = () => {
             Client <span className='text-[#445AE9]'>Testimonials</span>
           </h1>
           <div className='mt-2 h-2 w-2/5 rounded-xl bg-gradient-to-r from-[#659eff] to-[#3d67b1] sm:w-[25%] md:w-[15%]'></div>
+
+          {/* Carousel Container */}
           <div className='relative mt-10 overflow-hidden'>
             {/* Carousel Buttons */}
             <button
-              className='absolute -left-2 top-1/2 -translate-y-1/2 cursor-pointer text-6xl sm:-left-[2vw] sm:text-7xl md:text-9xl'
+              className='absolute  -left-2 top-1/2 z-10 flex size-10 -translate-y-1/2 items-center justify-center rounded-full text-9xl shadow-lg'
               onClick={() => moveCarousel(-1)}
             >
               ‹
             </button>
             <button
-              className='absolute -right-2 top-1/2 -translate-y-1/2 cursor-pointer text-6xl sm:-right-[2vw] sm:text-7xl md:text-9xl'
+              className='absolute -right-2 top-1/2 z-10 flex size-10 -translate-y-1/2 items-center  justify-center rounded-full text-9xl'
               onClick={() => moveCarousel(1)}
             >
               ›
@@ -105,13 +107,12 @@ const Testimonial = () => {
               className='flex transition-transform duration-500 ease-in-out'
               style={{
                 transform: `translateX(-${currentIndex * (100 / visibleCards)}%)`,
-                // width: `${testimonials.length * (100 / visibleCards)}%`,
               }}
             >
               {testimonials.map((data, index) => (
                 <div
                   key={index}
-                  className='service-card group w-full shrink-0 px-4 py-6 sm:px-6 sm:py-8 md:h-[38rem] md:w-80 lg:w-[25rem] '
+                  className='service-card group w-full shrink-0 px-4 py-6 sm:px-6 sm:py-8 md:h-[38rem] md:w-80 lg:w-[25rem]'
                   style={{ flexBasis: `${100 / visibleCards}%` }}
                 >
                   <div className='flex h-full flex-col justify-between gap-6 bg-white p-5 shadow-xl transition-colors duration-300 hover:bg-[#000029]'>
@@ -124,7 +125,7 @@ const Testimonial = () => {
                       </p>
                     </div>
                     <div className='flex flex-col gap-5'>
-                      <p className='mx-auto  self-end text-center text-base font-bold group-hover:text-white'>
+                      <p className='mx-auto self-end text-center text-base font-bold group-hover:text-white'>
                         {data.client}
                       </p>
                       <p

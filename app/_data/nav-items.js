@@ -11,10 +11,10 @@ export const navItems = [
   //   href: '/#about',
   //   title: 'about',
   // },
-  // {
-  //   href: '/#contact',
-  //   title: 'contact',
-  // },
+  {
+    href: '/contact',
+    title: 'contact',
+  },
   {
     href: '/resume',
     title: 'resume',
