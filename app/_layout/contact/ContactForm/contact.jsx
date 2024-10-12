@@ -2,6 +2,20 @@
 import React, { useRef, useState } from 'react';
 
 import emailjs from '@emailjs/browser';
+import { motion } from 'framer-motion';
+import { ArrowDownLeft } from 'lucide-react';
+import Image from 'next/image';
+import Link from 'next/link';
+import { CldImage } from 'next-cloudinary';
+
+import { MagneticButton } from '@/components';
+
+import { Container, ImageWrapper, MainTitle, Row } from './index.styled';
+
+/**
+ * @param {Object} props
+ * @param {import('framer-motion').MotionValue<number>} props.transformX
+ */
 
 const Contact = () => {
   const formRef = useRef();
@@ -168,12 +182,27 @@ const Contact = () => {
           </div>
         </div>
 
-        <button
+        {/* <button
           type='submit'
           className='bg-tertiary w-fit rounded-xl px-8 py-3 font-bold text-white shadow-md shadow-primary outline-none'
         >
           {loading ? 'Sending...' : 'Send'}
-        </button>
+        </button> */}
+
+        <Row>
+          <div className='relative w-full'>
+            <div className='h-px bg-muted-foreground' />
+            <div className='absolute right-0 top-0 z-20 -translate-x-1/2 -translate-y-1/2'>
+              <motion.div style={{ x: transformX }}>
+                <Link href='/contact' passHref>
+                  <MagneticButton variant='primary' size='lg'>
+                    Get in touch
+                  </MagneticButton>
+                </Link>
+              </motion.div>
+            </div>
+          </div>
+        </Row>
 
         {/* More form sections can go here */}
       </div>

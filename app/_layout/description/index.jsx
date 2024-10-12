@@ -29,7 +29,7 @@ export function Description() {
           transition={{ duration: 0.5 }}
         >
           <div className='absolute -right-[90vw] -top-10 md:top-3/4 lg:right-0 lg:top-full lg:me-10'>
-            <Link href='/about' passHref>
+            <Link href='#' passHref>
               <MagneticButton variant='ghost' size='xl'>
                 About me
               </MagneticButton>

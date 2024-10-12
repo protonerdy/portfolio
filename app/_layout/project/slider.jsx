@@ -22,19 +22,19 @@ export function ProjectSlider({ type, source }) {
         alt='project items'
       />
     ) : null;
-  const video =
-    type === 'video' ? (
-      <CldVideoPlayer
-        src={source}
-        loop={true}
-        controls={false}
-        muted={true}
-        autoPlay='always'
-        width='100%'
-        height='100%'
-        className='!static !bg-transparent'
-      />
-    ) : null;
+  // const video =
+  //   type === 'video' ? (
+  //     <CldVideoPlayer
+  //       src={source}
+  //       loop={true}
+  //       controls={false}
+  //       muted={true}
+  //       autoPlay='always'
+  //       width='100%'
+  //       height='100%'
+  //       className='!static !bg-transparent'
+  //     />
+  //   ) : null;
 
   return (
     <Center
@@ -45,7 +45,8 @@ export function ProjectSlider({ type, source }) {
       }}
     >
       {image}
-      {video}
+      {/* {video} */}
+      {image}
     </Center>
   );
 }

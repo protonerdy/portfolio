@@ -90,13 +90,13 @@ const Testimonial = () => {
           <div className='relative mt-10 overflow-hidden'>
             {/* Carousel Buttons */}
             <button
-              className='absolute  -left-2 top-1/2 z-10 flex size-10 -translate-y-1/2 items-center justify-center rounded-full text-9xl shadow-lg'
+              className='absolute  -left-3 top-1/2 z-10 flex size-10 -translate-y-1/2 items-center justify-center rounded-full text-9xl shadow-lg'
               onClick={() => moveCarousel(-1)}
             >
               ‹
             </button>
             <button
-              className='absolute -right-2 top-1/2 z-10 flex size-10 -translate-y-1/2 items-center  justify-center rounded-full text-9xl'
+              className='absolute -right-3 top-1/2 z-10 flex size-10 -translate-y-1/2 items-center  justify-center rounded-full text-9xl'
               onClick={() => moveCarousel(1)}
             >
               ›

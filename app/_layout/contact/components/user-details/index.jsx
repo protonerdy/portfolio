@@ -28,7 +28,7 @@ export function UserDetails({ transformX }) {
               alt='footer-pic'
             />
           </ImageWrapper>
-          <MainTitle>Let’s work</MainTitle>
+          <MainTitle>Let&apos;s work</MainTitle>
         </div>
         <div className='flex items-center justify-between'>
           <MainTitle>together</MainTitle>
@@ -43,7 +43,7 @@ export function UserDetails({ transformX }) {
           <div className='h-px bg-muted-foreground' />
           <div className='absolute right-0 top-0 z-20 -translate-x-1/2 -translate-y-1/2'>
             <motion.div style={{ x: transformX }}>
-              <Link href='mailto:hi@protonicgod.me' passHref>
+              <Link href='/contact' passHref>
                 <MagneticButton variant='primary' size='lg'>
                   Get in touch
                 </MagneticButton>
