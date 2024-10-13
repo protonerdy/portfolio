@@ -26,6 +26,11 @@ const Contact = () => {
     // template_hfid8bo
     // service_usmuk9s
 
+    // khushagara
+    // template_nhf5pe5
+    // service_uukh5bw
+    // W1Ru5fF9wGuM9NVsF
+
     emailjs
       .send(
         'service_usmuk9s',
