@@ -67,7 +67,7 @@ const Contact = () => {
     >
       <div className='w-full py-20 md:w-2/3'>
         <div className='flex items-start space-x-4 border-t border-gray-600 py-10'>
-          <p className='text-xl text-gray-500 md:mr-10 md:text-2xl'>01</p>
+          <p className='text-xl text-gray-500 md:mr-10 md:text-2xl'>01 </p>
           <div className='w-full'>
             <label
               className='mb-2 block text-2xl font-semibold text-white md:text-4xl'
