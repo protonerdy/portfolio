@@ -6,7 +6,7 @@ import { Contact, Navbar, Thumbnail, Transition } from '@/layout';
 export const metadata = {
   title: 'Work',
   description:
-    'Building safe, thriving communities for brands and creators. With over 5 years of experience as a professional Discord Community Manager, I help you engage, moderate, and grow vibrant spaces. © Managed by Protonicgod',
+    'Helping brands thrive in the digital world. Located in The Netherlands. Delivering tailor-made digital designs and building interactive websites from scratch. © Code by Dennis',
 };
 
 export default function Work() {
