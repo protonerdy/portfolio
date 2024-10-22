@@ -6,7 +6,7 @@ export const rootMetadata = {
     default: 'Protonicgod • Freelance Designer & Developer',
   },
   description:
-    'Helping brands thrive in the digital world. Located in The Netherlands. Delivering tailor-made digital designs and building interactive websites from scratch. © Code by Dennis',
+    'Building safe, thriving communities for brands and creators. With over 5 years of experience as a professional Discord Community Manager, I help you engage, moderate, and grow vibrant spaces. © Managed by Protonicgod',
   generator: 'ProtonicGod',
   applicationName: 'ProtonicGod',
   referrer: 'origin-when-cross-origin',
