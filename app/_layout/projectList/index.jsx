@@ -10,35 +10,35 @@ const projects = [
     year: '2024',
   },
   {
-    imageSrc: '/discord2.gif',
+    imageSrc: '/sponic.jpg',
     title: 'Sponic Ads - Owner',
     description:
       'India&amp;s biggest advertisement server on Discord. Making advertisement easier for Discord users.',
     year: '2024',
   },
   {
-    imageSrc: '/discord3.png',
+    imageSrc: '/codesocial.jpg',
     title: 'Code Social - Manager',
     description:
       'One of India&amp;s biggest student communities for  coders and designers.Helping developers and  designers to grow.',
     year: '2024',
   },
   {
-    imageSrc: '/discord2.gif',
+    imageSrc: '/battlechest.jpg',
     title: 'BattleChest - Assistant',
     description:
       "Community Manager India's premier  gaming tournament organizer with 15K ​members.Making gaming communities more competitive.",
     year: '2024',
   },
   {
-    imageSrc: '/discord2.gif',
+    imageSrc: '/discord3.png',
     title: 'Sexy.ai - Moderator',
     description:
       'A leading NSFW AI image generation website.Moderating content responsibly.',
     year: '2024',
   },
   {
-    imageSrc: '/discord2.gif',
+    imageSrc: '/modsquad.jpg',
     title: 'ModSquad - Moderator',
     description:
       'Successfully managed communities with up to 1,000,000 members. Spearheaded the development of highly engaged online communities for leading multinational tech companies.',
